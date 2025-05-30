@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  padding-inline: 32px;
+  margin-inline: auto;
+  max-width: 1300px;
+}
+
+
+/* Drawer open state */
+.open {
+  transform: translateX(0) !important;
+}
+
+.skip-to-content {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.skip-to-content:focus {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  clip: auto;
+  overflow: visible;
+  z-index: 1000;
+  background: white;
+  color: black;
+  border: 2px solid black;
+  padding: 8px;
+}
+
+
+/* Write your styles more here */
+
+@media screen and (width > 1000px) {
+  .navigation-drawer {
+    min-height: auto;
+    width: auto;
+    padding: 0;
+    background-color: transparent;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: static;
+    box-shadow: none;
+    transform: translateX(0);
+  }
+
+  .nav-list {
+    flex-direction: row;
+  }
+
+  .nav-list li a {
+    display: inline-block;
+  }
+
+  .drawer-button {
+    display: none;
+  }
+}

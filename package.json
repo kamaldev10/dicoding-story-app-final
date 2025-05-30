@@ -1,0 +1,44 @@
+{
+  "name": "dicoding-story-app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "webpack --config ./webpack.prod.js",
+    "start-dev": "webpack serve --config ./webpack.dev.js",
+    "prettier": "prettier . --check",
+    "prettier:write": "prettier . --write"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.7",
+    "autoprefixer": "^10.4.21",
+    "babel-loader": "^9.2.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.1",
+    "postcss": "^8.5.3",
+    "postcss-loader": "^8.1.1",
+    "prettier": "^3.5.3",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^3.4.17",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0",
+    "webpack-merge": "^6.0.1",
+    "workbox-webpack-plugin": "^7.3.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "feather-icons": "^4.29.2",
+    "idb": "^8.0.3",
+    "leaflet": "^1.9.4",
+    "sweetalert2": "^11.21.2",
+    "toastr": "^2.1.4",
+    "workbox-cacheable-response": "^7.3.0",
+    "workbox-precaching": "^7.3.0",
+    "workbox-routing": "^7.3.0",
+    "workbox-strategies": "^7.3.0"
+  }
+}
